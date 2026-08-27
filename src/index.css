@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --gw-bg: #101530;
+    --gw-card: #2C2149;
+    --gw-border: #40335F;
+    --gw-coral: #FF6B6B;
+    --gw-gold: #FFD166;
+    --gw-mint: #06D6A0;
+    --gw-sky: #4CC9F0;
+    --gw-pink: #F72585;
+    --gw-violet: #9B5DE5;
+    --gw-orange: #FF9F1C;
+    --gw-teal: #43AA8B;
+    --gw-peach: #FFB4A2;
+    --gw-olive: #90BE6D;
+  }
+
+  body {
+    background-color: #101530;
+    color: #f8fafc;
+    font-family: 'Manrope', sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Baloo 2', sans-serif;
+  }
+}
+
+.font-heading {
+  font-family: 'Baloo 2', sans-serif;
+}
+
+.font-mono-tags {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #101530;
+}
+::-webkit-scrollbar-thumb {
+  background: #40335F;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9B5DE5;
+}
+
+/* Background Blobs */
+.bg-blobs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 520px;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.35;
+  animation: blob 16s infinite ease-in-out;
+}
+
+@keyframes blob {
+  0% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(30px, -45px) scale(1.1); }
+  66% { transform: translate(-25px, 25px) scale(0.92); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+
+/* Gradient Text */
+.text-gradient {
+  background: linear-gradient(135deg, #FF6B6B 0%, #FFD166 50%, #F72585 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Form Pulse when user tries spinning before criteria are built */
+@keyframes pulse-border {
+  0% { box-shadow: 0 0 0 0 rgba(255, 107, 107, 0.85); transform: scale(1); }
+  50% { box-shadow: 0 0 0 16px rgba(255, 107, 107, 0); transform: scale(1.015); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 107, 107, 0); transform: scale(1); }
+}
+
+.form-pulse {
+  animation: pulse-border 1.5s ease-out;
+}
+
+/* Wheel Transition */
+.wheel-transition {
+  transition: transform 4.6s cubic-bezier(0.18, 0.7, 0.16, 1);
+}

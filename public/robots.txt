@@ -1,0 +1,10 @@
+# Googlebot & Search Engine Crawlers Rules
+User-agent: *
+Allow: /
+
+# Exclude private admin dashboard
+Disallow: /#gw-admin-2026
+Disallow: /*?admin=*
+
+# XML Sitemap Location
+Sitemap: https://wheelofgiftidea.com/sitemap.xml

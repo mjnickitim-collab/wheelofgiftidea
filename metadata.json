@@ -1,0 +1,6 @@
+{
+  "name": "Wheel of Gift Idea",
+  "description": "Interactive Wheel of Gift Idea discovery tool with curated gift catalog, progressive filter matching, gift guides, and admin management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
