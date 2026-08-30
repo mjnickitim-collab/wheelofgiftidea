@@ -2,7 +2,7 @@ import { Gift, StaticPage, AdSettings, FaqItem } from '../types';
 import { INITIAL_BLOG_POSTS } from './blogPosts';
 
 export { INITIAL_BLOG_POSTS };
-export const SEED_VERSION = 20;
+export const SEED_VERSION = 21;
 export const ADMIN_HASH = '#gw-admin-2026';
 export const AFFILIATE_ENABLED = false; // Currently disabled for 100% non-commercial free fun mode. Toggleable via admin or code flag in the future.
 
@@ -1481,6 +1481,770 @@ export const INITIAL_GIFTS: Gift[] = [
     ageBands: ['any'],
     relationships: ['partner_spouse', 'parent', 'child', 'friend'],
     occasions: ['birthday', 'parentsday', 'christmas', 'housewarming']
+  },
+  // Iconic Kitchen & Culinary Upgrades (Over $100 & High-End)
+  {
+    id: 'g132',
+    emoji: '🍲',
+    name: 'Le Creuset Enameled Cast Iron Signature Dutch Oven (5.5 Qt)',
+    desc: 'Iconic French culinary centerpiece offering legendary heat retention, durable enamel, and lifetime heirloom quality.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['anniversary', 'housewarming', 'birthday', 'christmas']
+  },
+  {
+    id: 'g133',
+    emoji: '☕',
+    name: 'Breville Barista Touch Espresso Machine',
+    desc: 'Automated touchscreen bean-to-cup espresso maker with integrated conical burr grinder and silky microfoam texturing.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['anniversary', 'birthday', 'housewarming', 'christmas']
+  },
+  {
+    id: 'g134',
+    emoji: '🧁',
+    name: 'KitchenAid Artisan Series 5-Quart Stand Mixer',
+    desc: 'Timeless countertop baking workhorse with 10 speeds, tilt-head design, and 59-point planetary mixing action.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['anniversary', 'housewarming', 'parentsday', 'birthday']
+  },
+  {
+    id: 'g135',
+    emoji: '🍞',
+    name: 'Balmuda The Toaster Steam Oven',
+    desc: 'Japanese engineered steam revolution toaster that restores bakery-fresh artisan croissants, sourdough, and pastries.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['housewarming', 'anniversary', 'birthday']
+  },
+  {
+    id: 'g136',
+    emoji: '🌪️',
+    name: 'Vitamix Explorian High-Performance Professional Blender',
+    desc: 'Commercial-grade aircraft stainless blades that effortlessly pulverize whole foods, frozen desserts, and hot soups.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['housewarming', 'birthday', 'parentsday', 'anniversary']
+  },
+  {
+    id: 'g137',
+    emoji: '🫖',
+    name: 'Fellow Stagg EKG Pro Electric Pour-Over Kettle',
+    desc: 'Precision gooseneck kettle featuring to-the-degree variable temperature control, LCD display, and built-in brew timer.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties'],
+    relationships: ['partner_spouse', 'friend', 'colleague'],
+    occasions: ['birthday', 'housewarming', 'christmas']
+  },
+  {
+    id: 'g138',
+    emoji: '🍕',
+    name: 'Ooni Koda 12 Gas-Powered Outdoor Pizza Oven',
+    desc: 'Portable outdoor stone-baked pizza oven that reaches 950°F in 15 minutes to cook authentic Neapolitan pizza in 60 seconds.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['birthday', 'anniversary', 'housewarming', 'christmas']
+  },
+  {
+    id: 'g139',
+    emoji: '🧊',
+    name: 'Yeti Tundra 45 Hard Cooler',
+    desc: 'Indestructible rotomolded cooler with PermaFrost insulation that keeps ice frozen for days on camping adventures.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['birthday', 'parentsday', 'graduation', 'christmas']
+  },
+  {
+    id: 'g140',
+    emoji: '🔪',
+    name: 'Shun Premier 8-Inch Japanese Chef Knife',
+    desc: 'Handcrafted Damascus clad VG-MAX steel blade with hammered Tsuchime finish and ergonomic Pakkawood handle.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['anniversary', 'birthday', 'housewarming', 'parentsday']
+  },
+  {
+    id: 'g141',
+    emoji: '🍷',
+    name: 'Coravin Timeless Three Plus Wine Preservation System',
+    desc: 'Innovative needle system that pours wine without pulling the cork, preserving remaining wine fresh for weeks and months.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['anniversary', 'birthday', 'housewarming', 'christmas']
+  },
+  {
+    id: 'g142',
+    emoji: '🥩',
+    name: 'MEATER Pro Smart Wireless Meat Thermometer',
+    desc: '100% wire-free smart meat probe with dual temperature sensors and real-time guided smartphone app cooking alerts.',
+    budget: '50to100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['parentsday', 'birthday', 'christmas']
+  },
+  {
+    id: 'g143',
+    emoji: '🍚',
+    name: 'Zojirushi Neuro Fuzzy 5.5-Cup Rice Cooker & Warmer',
+    desc: 'Advanced micro-computerized Japanese rice cooker that perfectly cooks white, brown, sushi, and sweet rice every time.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['housewarming', 'parentsday', 'birthday', 'christmas']
+  },
+  // Iconic Tech, Audio & Wearables
+  {
+    id: 'g144',
+    emoji: '🎧',
+    name: 'Apple AirPods Max Wireless Over-Ear Headphones',
+    desc: 'Luxury computational audio with custom acoustic design, active noise cancellation, and spatial audio with head tracking.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['teen', 'twenties', 'thirties', 'forties'],
+    relationships: ['partner_spouse', 'child', 'friend'],
+    occasions: ['birthday', 'graduation', 'christmas', 'anniversary']
+  },
+  {
+    id: 'g145',
+    emoji: '💨',
+    name: 'Dyson Supersonic Nural Intelligent Hair Dryer',
+    desc: 'Advanced hair care engineering with smart Nural sensors that protect scalp health and enhance natural shine rapidly.',
+    budget: 'over100',
+    genders: ['any', 'female'],
+    ageBands: ['teen', 'twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['birthday', 'anniversary', 'christmas', 'graduation']
+  },
+  {
+    id: 'g146',
+    emoji: '🔊',
+    name: 'Sonos Move 2 Portable Smart Wi-Fi & Bluetooth Speaker',
+    desc: 'Premium dual-tweeter stereo sound with 24-hour battery, IP56 weather resistance, and Trueplay automatic room tuning.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['housewarming', 'birthday', 'anniversary', 'christmas']
+  },
+  {
+    id: 'g147',
+    emoji: '🎧',
+    name: 'Sony WH-1000XM5 Noise Canceling Headphones',
+    desc: 'Industry-leading dual processor noise cancellation with 8 microphones, 30-hour battery life, and ultra-comfortable fit.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['teen', 'twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'colleague', 'friend', 'child'],
+    occasions: ['birthday', 'graduation', 'christmas']
+  },
+  {
+    id: 'g148',
+    emoji: '📻',
+    name: 'Marshall Stanmore III Bluetooth Home Speaker',
+    desc: 'Vintage rock-and-roll styling with brass details, two-way driver system, and rich room-filling analog warmth.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'friend', 'parent'],
+    occasions: ['birthday', 'housewarming', 'christmas', 'anniversary']
+  },
+  {
+    id: 'g149',
+    emoji: '💍',
+    name: 'Oura Ring Gen3 Horizon Smart Health Ring',
+    desc: 'Titanium lightweight smart ring monitoring accurate sleep staging, readiness scores, heart rate, and body temperature.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['birthday', 'anniversary', 'christmas']
+  },
+  {
+    id: 'g150',
+    emoji: '⌚',
+    name: 'Apple Watch Ultra 2 Titanium GPS + Cellular',
+    desc: 'Rugged aerospace titanium smart sport watch with 3000-nit retina display, dual-frequency GPS, and 36-hour battery.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['birthday', 'anniversary', 'christmas', 'graduation']
+  },
+  {
+    id: 'g151',
+    emoji: '🧭',
+    name: 'Garmin Fenix 7 Pro Solar Multisport GPS Smartwatch',
+    desc: 'Solar charging multisport watch with built-in LED flashlight, topo maps, and advanced endurance stamina metrics.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['birthday', 'parentsday', 'anniversary', 'christmas']
+  },
+  {
+    id: 'g152',
+    emoji: '📖',
+    name: 'Kindle Scribe Digital Notebook & E-Reader (10.2" Display)',
+    desc: 'Glare-free 300 ppi Paperwhite display with battery-free premium pen for reading and natural paper-feel journaling.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['teen', 'twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'colleague', 'friend'],
+    occasions: ['birthday', 'graduation', 'parentsday', 'christmas']
+  },
+  {
+    id: 'g153',
+    emoji: '👓',
+    name: 'Ray-Ban Meta Smart Wayfarer Camera Glasses',
+    desc: 'Classic Wayfarer frames with built-in 12MP ultra-wide camera, open-ear spatial audio speakers, and voice AI assistance.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['teen', 'twenties', 'thirties', 'forties'],
+    relationships: ['partner_spouse', 'friend', 'child'],
+    occasions: ['birthday', 'graduation', 'christmas']
+  },
+  {
+    id: 'g154',
+    emoji: '📹',
+    name: 'GoPro HERO13 Black 5.3K Waterproof Action Camera',
+    desc: 'Flagship rugged action camera with HyperSmooth 6.0 stabilization, HDR 5.3K video recording, and waterproof to 33ft.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['teen', 'twenties', 'thirties', 'forties'],
+    relationships: ['partner_spouse', 'child', 'friend'],
+    occasions: ['birthday', 'graduation', 'christmas']
+  },
+  {
+    id: 'g155',
+    emoji: '🛸',
+    name: 'DJI Mini 4 Pro Lightweight 4K HDR Foldable Drone',
+    desc: 'Sub-249g ultra-compact drone with omnidirectional obstacle sensing, 4K/60fps true vertical shooting, and 34-min flight.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['teen', 'twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend', 'child'],
+    occasions: ['birthday', 'graduation', 'christmas']
+  },
+  {
+    id: 'g156',
+    emoji: '🔋',
+    name: 'Anker Prime 27,650mAh 250W Multi-Port Fast Power Bank',
+    desc: 'High-density smart battery pack with digital display capable of fast charging two high-power laptops simultaneously.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties'],
+    relationships: ['colleague', 'partner_spouse', 'friend'],
+    occasions: ['birthday', 'graduation', 'christmas']
+  },
+  {
+    id: 'g157',
+    emoji: '⌨️',
+    name: 'Keychron Q1 Pro Custom Wireless Mechanical Keyboard',
+    desc: 'CNC aluminum body keyboard with hot-swappable switches, double-gasket acoustic dampening, and programmable rotary knob.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['teen', 'twenties', 'thirties', 'forties'],
+    relationships: ['colleague', 'friend', 'partner_spouse'],
+    occasions: ['birthday', 'graduation', 'christmas']
+  },
+  {
+    id: 'g158',
+    emoji: '🎮',
+    name: 'PlayStation 5 Slim Next-Gen Gaming Console',
+    desc: 'Ultra-fast SSD, ray tracing, 4K gaming, and DualSense haptic feedback controller for unmatched immersive play.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['child', 'teen', 'twenties', 'thirties'],
+    relationships: ['partner_spouse', 'child', 'friend'],
+    occasions: ['birthday', 'christmas', 'graduation']
+  },
+  // Luxury Travel, Fashion & Daily Essentials
+  {
+    id: 'g159',
+    emoji: '🧳',
+    name: 'Rimowa Essential Cabin Lightweight Carry-On Suitcase',
+    desc: 'World-renowned German engineering in high-tech polycarbonate with multiwheel spinner system and TSA combination lock.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['anniversary', 'graduation', 'birthday', 'christmas']
+  },
+  {
+    id: 'g160',
+    emoji: '🎒',
+    name: 'Tumi Alpha Bravo Navigation Ballistic Nylon Backpack',
+    desc: 'Ultra-durable FXT ballistic nylon backpack with padded laptop sleeve, waterproof pocket, and sleek executive profile.',
+    budget: 'over100',
+    genders: ['any', 'male'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'colleague'],
+    occasions: ['birthday', 'graduation', 'anniversary', 'parentsday']
+  },
+  {
+    id: 'g161',
+    emoji: '💼',
+    name: 'Bellroy Tokyo Work Bag & Premium Leather Briefcase',
+    desc: 'Sustainably sourced leather and recycled fabric with quick-access organization, padded 16" laptop pocket, and luggage strap.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties'],
+    relationships: ['partner_spouse', 'colleague', 'friend'],
+    occasions: ['graduation', 'birthday', 'anniversary']
+  },
+  {
+    id: 'g162',
+    emoji: '🖊️',
+    name: 'Montblanc Meisterstück Classique Platinum-Coated Ballpoint Pen',
+    desc: 'Precious black resin with platinum-coated clip and handcrafted German emblem, the undisputed gold standard of luxury writing.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['thirties', 'forties', 'fifty_plus'],
+    relationships: ['parent', 'partner_spouse', 'colleague'],
+    occasions: ['graduation', 'retirement', 'anniversary', 'parentsday']
+  },
+  {
+    id: 'g163',
+    emoji: '🧥',
+    name: 'Barbour Classic Bedale Waxed Tartan Cotton Jacket',
+    desc: 'Timeless British heritage waxed cotton jacket with corduroy collar, storm-fly front, and breathable tartan lining.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['birthday', 'anniversary', 'christmas', 'parentsday']
+  },
+  {
+    id: 'g164',
+    emoji: '🧣',
+    name: '100% Pure Mongolian Cashmere Oversized Travel Wrap',
+    desc: 'Cloud-soft grade-A cashmere wrap that doubles as a luxurious airplane blanket, evening shawl, or cozy winter scarf.',
+    budget: 'over100',
+    genders: ['any', 'female'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['birthday', 'anniversary', 'parentsday', 'christmas']
+  },
+  {
+    id: 'g165',
+    emoji: '👜',
+    name: 'Lululemon Everywhere Belt Bag & Daily Essentials Pouch',
+    desc: 'Water-repellent sleek hands-free waist and crossbody pouch with interior organizing pockets for active everyday living.',
+    budget: '30to50',
+    genders: ['any', 'female'],
+    ageBands: ['teen', 'twenties', 'thirties', 'forties'],
+    relationships: ['partner_spouse', 'friend', 'child'],
+    occasions: ['birthday', 'graduation', 'christmas']
+  },
+  {
+    id: 'g166',
+    emoji: '⌚',
+    name: 'Tissot PRX Powermatic 80 Swiss Automatic Watch',
+    desc: 'Integrated stainless steel bracelet with waffle tapisserie dial, sapphire crystal, and 80-hour Swiss mechanical power reserve.',
+    budget: 'over100',
+    genders: ['any', 'male'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['anniversary', 'graduation', 'birthday', 'parentsday']
+  },
+  // Luxury Wellness, Fragrance & Self-Care
+  {
+    id: 'g167',
+    emoji: '🕯️',
+    name: 'Diptyque Baies Scented Luxury Candle (600g Giant 3-Wick)',
+    desc: 'Parisian luxury fragrance combining freshly plucked blackcurrant berries with delicate rose petals in handcrafted porcelain.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['housewarming', 'anniversary', 'birthday', 'christmas']
+  },
+  {
+    id: 'g168',
+    emoji: '🧴',
+    name: 'Aesop Resurrection Aromatique Hand & Body Duet',
+    desc: 'Botanical hand wash and rich nourishing balm infused with mandarin rind, rosemary leaf, and cedar atlas in iconic amber bottles.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'friend', 'parent', 'colleague'],
+    occasions: ['housewarming', 'birthday', 'christmas', 'parentsday']
+  },
+  {
+    id: 'g169',
+    emoji: '🌸',
+    name: 'Jo Malone London English Pear & Freesia Cologne Set',
+    desc: 'Quintessential British fragrance capturing fresh king william pears wrapped in white freesias and mellowed by amber patchouli.',
+    budget: 'over100',
+    genders: ['any', 'female'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['birthday', 'anniversary', 'parentsday', 'christmas']
+  },
+  {
+    id: 'g170',
+    emoji: '✨',
+    name: 'Maison Francis Kurkdjian Baccarat Rouge 540 Eau de Parfum',
+    desc: 'World-renowned amber woody floral masterpiece blending Egyptian jasmine, saffron, cedarwood, and radiant ambergris.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'friend'],
+    occasions: ['anniversary', 'birthday', 'christmas']
+  },
+  {
+    id: 'g171',
+    emoji: '🪵',
+    name: 'Le Labo Santal 33 Hand-Formulated Eau de Parfum',
+    desc: 'Cult classic smoky sandalwood fragrance infused with cardamom, iris, violet, and comforting leather and cedar notes.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties'],
+    relationships: ['partner_spouse', 'friend'],
+    occasions: ['birthday', 'anniversary', 'christmas']
+  },
+  {
+    id: 'g172',
+    emoji: '💆',
+    name: 'Theragun PRO Plus Deep Tissue Percussive Massage Gun',
+    desc: 'Medical-grade quiet percussive therapy device with infrared light, heat therapy, and biometric vibration sensors.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['birthday', 'parentsday', 'anniversary', 'christmas']
+  },
+  {
+    id: 'g173',
+    emoji: '🔥',
+    name: 'HigherDOSE Infrared Sauna Detox Blanket',
+    desc: 'At-home infrared heat blanket with healing tourmaline and amethyst crystals to boost circulation and relieve stress.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['birthday', 'anniversary', 'parentsday']
+  },
+  {
+    id: 'g174',
+    emoji: '✨',
+    name: 'NuFACE Trinity+ Microcurrent Facial Toning Device',
+    desc: 'Clinically proven smart microcurrent handheld device that tones facial muscles, contours jawline, and lifts eyebrows.',
+    budget: 'over100',
+    genders: ['any', 'female'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['birthday', 'anniversary', 'parentsday']
+  },
+  {
+    id: 'g175',
+    emoji: '🛌',
+    name: 'Slip Pure Silk Queen Pillowcase & Sleep Mask Gift Set',
+    desc: 'Award-winning slipsilk crafted from 22 momme mulberry silk to prevent hair tangles, frizz, and morning facial sleep creases.',
+    budget: 'over100',
+    genders: ['any', 'female'],
+    ageBands: ['teen', 'twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['birthday', 'anniversary', 'christmas', 'parentsday']
+  },
+  {
+    id: 'g176',
+    emoji: '🌅',
+    name: 'Hatch Restore 2 Sunrise Alarm & Sound Machine',
+    desc: 'Smart bedside sleep companion with gentle circadian dawn sunrise light, soothing sleep stories, and wind-down meditations.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['teen', 'twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend', 'child'],
+    occasions: ['birthday', 'housewarming', 'christmas', 'graduation']
+  },
+  {
+    id: 'g177',
+    emoji: '🖼️',
+    name: 'Aura Mason Luxe Smart WiFi Cloud Digital Photo Frame',
+    desc: '2K landscape/portrait display frame with free unlimited cloud storage that the whole family can update instantly via app.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['thirties', 'forties', 'fifty_plus'],
+    relationships: ['parent', 'partner_spouse', 'friend'],
+    occasions: ['parentsday', 'anniversary', 'housewarming', 'birthday', 'christmas']
+  },
+  // Outdoor, Entertaining & Milestone Keepsakes
+  {
+    id: 'g178',
+    emoji: '🔥',
+    name: 'Solo Stove Bonfire 2.0 Smokeless Stainless Steel Fire Pit',
+    desc: 'Signature 360-degree secondary combustion fire pit that produces roaring radiant heat with virtually zero smoke or stinging eyes.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['housewarming', 'birthday', 'parentsday', 'christmas']
+  },
+  {
+    id: 'g179',
+    emoji: '🎓',
+    name: 'MasterClass All-Access Annual VIP Gift Pass',
+    desc: 'Unlimited streaming access to 200+ world-renowned instructors in cooking, leadership, writing, photography, and music.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['teen', 'twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend', 'colleague', 'child'],
+    occasions: ['graduation', 'birthday', 'retirement', 'christmas']
+  },
+  {
+    id: 'g180',
+    emoji: '🍷',
+    name: 'Riedel Sommeliers Grand Cru Handmade Crystal Wine Glasses (Set of 2)',
+    desc: 'Mouth-blown crystal stemware shaped specifically to unlock the complex aromatic bouquets of Cabernet and Pinot Noir.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['anniversary', 'housewarming', 'birthday']
+  },
+  {
+    id: 'g181',
+    emoji: '♟️',
+    name: 'Handcrafted Solid Walnut & Maple Chess Board with Weighted Brass Pieces',
+    desc: 'Exquisite tournament-grade wooden heirloom chessboard with felted heavy metal pieces in a fitted velvet storage drawer.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['teen', 'twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['birthday', 'anniversary', 'parentsday', 'christmas', 'graduation']
+  },
+  {
+    id: 'g182',
+    emoji: '🎙️',
+    name: 'Shure SM7B Cardioid Dynamic Studio Vocal Microphone',
+    desc: 'The legendary broadcasting and studio vocal microphone with electromagnetic shielding and smooth, warm flat frequency response.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['teen', 'twenties', 'thirties', 'forties'],
+    relationships: ['friend', 'child', 'partner_spouse'],
+    occasions: ['birthday', 'graduation', 'christmas']
+  },
+  {
+    id: 'g183',
+    emoji: '🖱️',
+    name: 'Logitech MX Master 3S Ergonomic Performance Wireless Mouse',
+    desc: 'Quiet electromagnetic MagSpeed scrolling wheel, 8000 DPI sensor on glass, and ergonomic thumb rest for elite productivity.',
+    budget: '50to100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['colleague', 'partner_spouse', 'friend'],
+    occasions: ['birthday', 'graduation', 'christmas']
+  },
+  {
+    id: 'g184',
+    emoji: '🪑',
+    name: 'Herman Miller Ergonomic Adjustable Lumbar Posture Cushion',
+    desc: 'Scientifically engineered ergonomic memory foam back support that improves spinal alignment during long office hours.',
+    budget: '50to100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['colleague', 'parent', 'partner_spouse'],
+    occasions: ['birthday', 'parentsday', 'teachersday']
+  },
+  {
+    id: 'g185',
+    emoji: '🍸',
+    name: 'Bartesian Premium Cocktail and Margarita Capsule Maker',
+    desc: 'On-demand home cocktail bar machine that mixes craft margaritas, old fashioneds, and martinis in 30 seconds from liquid capsules.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['anniversary', 'housewarming', 'birthday', 'christmas']
+  },
+  {
+    id: 'g186',
+    emoji: '☕',
+    name: 'Ember Smart Travel Mug 2+ with Apple Find My Integration',
+    desc: '12 oz leakproof travel mug keeping beverages at custom exact temperatures for 3 hours, with location tracking support.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'colleague', 'parent', 'friend'],
+    occasions: ['birthday', 'parentsday', 'graduation', 'christmas']
+  },
+  {
+    id: 'g187',
+    emoji: '🎛️',
+    name: 'Elgato Stream Deck MK.2 Custom Control Console',
+    desc: '15 customizable LCD keys to trigger macros, audio clips, lighting, and app shortcuts with visual tactile feedback.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['teen', 'twenties', 'thirties', 'forties'],
+    relationships: ['friend', 'child', 'colleague', 'partner_spouse'],
+    occasions: ['birthday', 'graduation', 'christmas']
+  },
+  {
+    id: 'g188',
+    emoji: '🏕️',
+    name: 'Helinox Chair Zero Ultra-Lightweight Packable Camp Chair',
+    desc: 'Featherweight 1.1 lb DAC aluminum alloy camp chair that packs down to the size of a water bottle for hiking trips.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['birthday', 'parentsday', 'graduation']
+  },
+  {
+    id: 'g189',
+    emoji: '🥾',
+    name: 'National Parks America the Beautiful Annual Pass & Leather Passport Journal',
+    desc: 'One-year entrance to 2,000+ federal recreation sites paired with a debossed leather park stamp passport.',
+    budget: '50to100',
+    genders: ['any'],
+    ageBands: ['any'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['birthday', 'anniversary', 'retirement', 'parentsday']
+  },
+  {
+    id: 'g190',
+    emoji: '🍳',
+    name: 'Staub Cast Iron 4-Quart Round Cocotte with Self-Basting Lid',
+    desc: 'Authentic French matte black enameled cocotte with spiked lid raindrops that continuously baste meats and roasts.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['housewarming', 'anniversary', 'birthday']
+  },
+  {
+    id: 'g191',
+    emoji: '⚡',
+    name: 'Belkin BoostCharge Pro 3-in-1 MagSafe Fast Wireless Charging Stand',
+    desc: 'Official 15W MagSafe certified chrome tree stand fast-charging iPhone, Apple Watch Series, and AirPods simultaneously.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['teen', 'twenties', 'thirties', 'forties'],
+    relationships: ['partner_spouse', 'friend', 'colleague'],
+    occasions: ['birthday', 'graduation', 'christmas']
+  },
+  {
+    id: 'g192',
+    emoji: '🧳',
+    name: 'Away The Bigger Carry-On Aluminum Edition',
+    desc: 'Hard-anodized aerospace aluminum shell luggage with twin TSA latch closures and 360-degree silent spinner wheels.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['anniversary', 'graduation', 'birthday']
+  },
+  {
+    id: 'g193',
+    emoji: '🧥',
+    name: 'Patagonia Classic Retro-X Windproof Deep-Pile Fleece Jacket',
+    desc: 'Warm 100% recycled polyester fleece jacket with wind-blocking membrane and breathable moisture-wicking mesh lining.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['teen', 'twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend', 'child'],
+    occasions: ['birthday', 'christmas', 'parentsday']
+  },
+  {
+    id: 'g194',
+    emoji: '🥃',
+    name: 'Custom Monogrammed Heavyweight Lead-Free Crystal Whiskey Glasses (Set of 4)',
+    desc: 'Ultra-clear weighted European crystal rocks glasses personalized with deep laser-etched family monogram.',
+    budget: '30to50',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend', 'colleague'],
+    occasions: ['anniversary', 'birthday', 'parentsday', 'housewarming']
+  },
+  {
+    id: 'g195',
+    emoji: '☕',
+    name: 'De\'Longhi Dedica Deluxe Slim Stainless Espresso Machine',
+    desc: 'Ultra-compact 6-inch wide 15-bar Italian espresso machine with manual cappuccino steam wand for home lattes.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['housewarming', 'birthday', 'anniversary']
+  },
+  {
+    id: 'g196',
+    emoji: '🫒',
+    name: 'Brightland Single-Origin Extra Virgin Olive Oil & Vinegar Tasting Capsule',
+    desc: 'Cold-pressed California EVOO infused with heirloom garlic, chili, lemon, and raw blackberry vinegar in UV-coated bottles.',
+    budget: '50to100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend', 'colleague'],
+    occasions: ['housewarming', 'parentsday', 'birthday', 'christmas']
+  },
+  {
+    id: 'g197',
+    emoji: '📚',
+    name: 'New York Times Custom Front Page Birthday Book (Hardcover)',
+    desc: 'Bespoke library-bound collection reproducing every New York Times front page published on their birthday throughout their entire life.',
+    budget: '50to100',
+    genders: ['any'],
+    ageBands: ['forties', 'fifty_plus'],
+    relationships: ['parent', 'partner_spouse', 'friend'],
+    occasions: ['birthday', 'anniversary', 'parentsday', 'retirement']
+  },
+  {
+    id: 'g198',
+    emoji: '🪴',
+    name: 'Click & Grow Smart Garden 3 Self-Watering Indoor Garden',
+    desc: 'NASA-inspired smart soil pods with integrated LED grow arm that automatically waters and nourishes fresh herbs on kitchen counters.',
+    budget: '50to100',
+    genders: ['any'],
+    ageBands: ['any'],
+    relationships: ['partner_spouse', 'parent', 'colleague', 'friend'],
+    occasions: ['housewarming', 'birthday', 'parentsday', 'teachersday']
+  },
+  {
+    id: 'g199',
+    emoji: '🫧',
+    name: 'Aarke Carbonator Pro Sparkling Water Maker (Glass Bottle)',
+    desc: 'Swedish precision engineered stainless steel sparkling water machine with effortless single-handed push carbonation.',
+    budget: 'over100',
+    genders: ['any'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['housewarming', 'birthday', 'anniversary']
+  },
+  {
+    id: 'g200',
+    emoji: '💎',
+    name: 'Solid 14k Gold Custom Handwriting / Signature Bar Necklace',
+    desc: 'Hand-carved solid gold bar pendant engraved with a cherished loved one\'s real handwriting, signature, or anniversary date.',
+    budget: 'over100',
+    genders: ['any', 'female'],
+    ageBands: ['twenties', 'thirties', 'forties', 'fifty_plus'],
+    relationships: ['partner_spouse', 'parent', 'friend'],
+    occasions: ['anniversary', 'parentsday', 'birthday', 'christmas']
   }
 ];
 

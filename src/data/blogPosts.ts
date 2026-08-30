@@ -7,6 +7,7 @@ import { BUDGET_POSTS } from './posts/budgets';
 import { COMMUNITY_AND_CARE_POSTS } from './posts/communityAndCare';
 import { CELEBRATIONS_AND_MILESTONES_POSTS } from './posts/celebrationsAndMilestones';
 import { SMART_GIFTING_AND_GUIDES_POSTS } from './posts/smartGiftingAndGuides';
+import { HIGH_INTENT_TRENDING_POSTS } from './posts/highIntentTrending';
 
 // Combine all categorized blog posts into a single unified list
 const ALL_RAW_POSTS: BlogPost[] = [
@@ -18,6 +19,7 @@ const ALL_RAW_POSTS: BlogPost[] = [
   ...COMMUNITY_AND_CARE_POSTS,
   ...CELEBRATIONS_AND_MILESTONES_POSTS,
   ...SMART_GIFTING_AND_GUIDES_POSTS,
+  ...HIGH_INTENT_TRENDING_POSTS,
 ];
 
 // Sort posts numerically by ID (p1, p2, ... p28) or maintain standard sequence
