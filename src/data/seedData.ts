@@ -2,7 +2,7 @@ import { Gift, StaticPage, AdSettings, FaqItem } from '../types';
 import { INITIAL_BLOG_POSTS } from './blogPosts';
 
 export { INITIAL_BLOG_POSTS };
-export const SEED_VERSION = 21;
+export const SEED_VERSION = 22;
 export const ADMIN_HASH = '#gw-admin-2026';
 export const AFFILIATE_ENABLED = false; // Currently disabled for 100% non-commercial free fun mode. Toggleable via admin or code flag in the future.
 
